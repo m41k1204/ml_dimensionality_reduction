@@ -297,10 +297,9 @@ def main():
         class_names_dict,
     )
 
-    n_components_clf = 50
+    n_components_clf = 80
     print(f"\n--- Aplicando Spectral Embedding con {n_components_clf} componentes ---")
     print(f"Procesando {len(X_combined)} muestras...")
-    print("⏳ Esto puede tardar 5-15 minutos...")
 
     X_combined_spectral = spectral_embedding(
         X_combined,
